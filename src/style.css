@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .heading-l,
+    .heading-m,
+    .heading-s {
+        @apply font-display font-bold;
+    }
+
+    .heading-l {
+        @apply font-extrabold italic text-[56px] lg:text-[104px] leading-[1.1em] tracking-[-0.02em];
+    }
+
+    .heading-m {
+        @apply not-italic text-xl lg:text-[32px] leading-[30px] lg:leading-[48px] tracking-[0.01em];
+    }
+
+    .heading-s {
+        @apply not-italic lg:text-sm text-xs leading-[21px] tracking-[0.25em];
+    }
+
+    .text-body {
+        @apply font-sans text-sm font-normal leading-[21px] text-black tracking-normal;
+    }
+}
+
+body {
+    @apply font-sans text-sm font-normal leading-[21px] text-black bg-grey-light;
+}
